@@ -16,9 +16,9 @@ $green: #6FCF97
     margin: 0
     box-sizing: border-box
 
-html 
+html
     font-family: $default-font
-h1 
+h1
     font-size: 24px
     color: $dark-shade
     font-family: $title
@@ -26,13 +26,13 @@ h2
     font-size: 19px
     color: $dark-shade
     font-family: $title
-h3 
+h3
     font-size: 12px
     color: $dark-shade
     font-family: $sub-title
     text-transform: uppercase
 
-p 
+p
     font-size: $fontsize
     color: $dark-shade-one-third
     font-family: $default-font
@@ -43,3 +43,79 @@ p
     padding-left: 15px
     margin-right: auto
     margin-left: auto
+
+//MENU
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap')
+
+*
+    font-family: 'Open Sans'
+    font-size: 16px
+    margin: 0
+    padding: 0
+
+header
+    position: relative
+    max-width: 1200px
+    margin: 20px auto
+    padding: 10px
+    // background: #e6ccff
+    box-sizing: border-box
+    border-radius: 4px
+    box-shadow: 0 2px 5px rgba(0,0,0,.2)
+
+.logo
+    color: #069370
+    height: 60px
+    font-size: 36px
+    line-height: 60px
+    padding: 0 20px
+    // background: #ccc
+    text-align: center
+    box-sizing: border-box
+    float: left
+    text-decoration: none
+
+nav
+    float: right
+    ul
+        margin: 0
+        padding: 0
+        display: flex
+        li
+            list-style: none
+            a
+                display: block
+                margin: 10px 0
+                padding: 10px 20px
+                text-decoration: none
+                color: #262626
+                &.active, &:hover
+                    background: #069370
+                    color: #fff
+                    transition: 0.5s
+
+.clearfix
+    clear: both
+@media (max-width: 1200px)
+    header
+        margin: 20px
+
+@media (max-width: 768px)
+
+    nav
+        display: none
+    .menu-toggle
+        display: block
+        width: 40px
+        height: 40px
+        margin: 10px
+        // background: #ccc
+        float: right
+        cursor: pointer
+        text-align: center
+        font-size: 30px
+        color: #069370
+        &:before
+            content: '\f0c9'
+            font-family: fontAwesome
+            line-height: 40px

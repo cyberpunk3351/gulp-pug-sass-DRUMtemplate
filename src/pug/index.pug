@@ -1,3 +1,21 @@
-extends layouts/home
-
-block content
+doctype html
+html.font(lang='en')
+	head
+		meta(charset='UTF-8')
+		title A Pen by Ilya
+		link(href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', rel='stylesheet')
+		link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css')
+		link(rel='stylesheet', href='css/main.css')
+	body
+		header
+			a.logo(href='#') Logo
+			.menu-toggle
+			nav
+				ul
+					li
+						a.active(href='#') Home
+					li
+						a(href='#') Home
+					li
+						a(href='#') Home
+			.clearfix

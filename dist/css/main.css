@@ -148,6 +148,19 @@ nav ul li a:hover {
     display: none;
   }
 
+  nav.active {
+    display: block;
+    width: 100%;
+  }
+
+  nav.active ul {
+    display: block;
+  }
+
+  nav.active ul li {
+    margin: 0;
+  }
+
   .menu-toggle {
     display: block;
     width: 40px;
@@ -164,5 +177,9 @@ nav ul li a:hover {
     content: '\f0c9';
     font-family: fontAwesome;
     line-height: 40px;
+  }
+
+  .menu-toggle.active:before {
+    content: '\f00d';
   }
 }

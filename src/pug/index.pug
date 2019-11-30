@@ -8,15 +8,13 @@ html
 		link(rel='stylesheet', href='css/main.css')
 
 	body
-		header
-			a.logo(href='#') Logo
-			.menu-toggle
-			nav
-				ul
-					li
-						a.active(href='#') Home
-					li
-						a(href='#') Home
-					li
-						a(href='#') Home
-			.clearfix
+		include ./modules/nav01/nav01
+		
+		script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js')
+		script(type='text/javascript').
+			$(document).ready(function(){
+				$('.menu-toggle').click(function(){
+					$('.menu-toggle').toggleClass('active')
+					$('nav').toggleClass('active')
+				})
+			})
